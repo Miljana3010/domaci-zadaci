@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6592CF;
+}
+.wrapper{
+    height: 60vh;
+    width: 80vw;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.pravougaonik{
+    background-color: #243D83;
+    height: 60vh;
+    width: 90vw;
+    position: absolute;
+}
+.circle1{
+    border-radius: 50%;
+    background-color: #6592CF;
+    position: absolute;
+    height: 60vw;
+    width: 60vw;
+}
+.circle2{
+    background-color: #EEB850;
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    border: #243D83 10vw solid;
+}
