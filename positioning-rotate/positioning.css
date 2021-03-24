@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #222730;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    height: 60vh;
+    width: 90vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rectangle{
+    height: 50vh;
+    width: 80vw;
+    position: absolute;
+    background-color: #4CAAB3;
+}
+.square{
+    height: 80vh;
+    width: 80vh;
+    transform: rotate(45deg);
+    background-color: #4CAAB3;
+    position: absolute;
+    border: #222730 90px solid;
+}
+.square1{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    background-color: #393E46;
+    position: absolute;
+}
