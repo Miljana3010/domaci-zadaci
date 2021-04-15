@@ -1,25 +1,296 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 .wrapper{
-    padding: 10px;
+    height: 100vh;
+    background-image: url(zachary-nelson-192289-unsplash.png);
+    background-size: cover;
+    background-position: center;
+     
+    z-index: 4;
+    
+    
+}
+.wrapper::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    background-color: rgba(73, 33, 173, 0.83);
+    z-index: 0;
+    position: fixed;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    position: fixed;
+}
+header > div> img{
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+header .menu{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    background-color: #fff;
+    height: 30vh;
+    width: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(55, 9, 65); 
+    border: solid 1px rgb(55, 9, 65); 
+    z-index: 3;
+    
+}
+
+ li 
+ {
+    list-style: none;
+    padding: 5px;
 }
 a{
-    display: block;
-    padding: 10px;
     text-decoration: none;
-    font-size: 20px;
-    color: #0078d7;
-    border: 1px solid #0078d7;
-    width: fit-content;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    transition: background-color 0.5s ease;
+    font-size: x-large;
 }
-a:hover{
+h1,
+p{
     color: white;
-    border: 1px solid white;
-    background-color: #0078d7;
+    position: absolute;
+    padding: 15px;
+    margin: 5px;
+    
+}
+h1{
+    top: 60px;
+    left: 10px;
+    width: 50%;
+}
+p{
+    top: 170px;
+    left: 10px;
+    width: 70%;
+}
+.icon1{
+    
+    position: absolute;
+    top:40vh;
+    left: 4vh;
+}
+.icon2{
+   
+    position: absolute;
+    top:60vh;
+    left: 4vh;
+}
+.icon3{
+    
+    position: absolute;
+    top:80vh;
+    left: 4vh
+}
+.icon4{
+  
+    position: absolute;
+    top:100vh;
+    left: 4vh
+}
+.innerwrapper{ 
+
+    position: absolute; 
+    top: 130vh; 
+    width: 40vh; 
+    left: 3vh; 
+    background-color: white; 
+    border-radius: 20%; 
+    height: 60vh; 
+    position: relative; 
+} 
+
+.singup{ 
+   position: absolute; 
+    height: 30px; 
+    width: 100px; 
+    background-color: white; 
+    border: solid #4723AE 1px; 
+    color: #4723AE; 
+    top: 50px; 
+    left: 40px; 
+} 
+
+.login{ 
+    position: absolute; 
+    height: 30px; 
+    width: 100px; 
+    background-color:#4723AE; 
+    border: solid white 1px; 
+    color: white; 
+    top: 50px; 
+    right: 40px; 
+} 
+
+.male{ 
+    position: absolute; 
+    top: 100px; 
+    left: 20px; 
+} 
+
+.female{ 
+    position: absolute; 
+    top: 100px; 
+    right: 20px; 
+} 
+
+#username{ 
+    position: absolute; 
+    top: 260px; 
+    left: 40px; 
+    width: 30vh; 
+    border-radius: 10%; 
+    height: 4vh; 
+    border-color: 1px solid #4723AE; 
+} 
+
+#mail{ 
+    position: absolute; 
+    top: 300px; 
+    left: 40px; 
+    width: 30vh; 
+    border-radius: 10%; 
+    height: 4vh; 
+    border-color: 1px solid #4723AE; 
+
+} 
+
+#scroll{ 
+
+    position: absolute; 
+    top: 340px; 
+    left: 40px; 
+    width: 30vh; 
+    border-radius: 10%; 
+    height: 4vh; 
+    border-color: 1px solid #4723AE; 
+} 
+
+.innerwrapper>div:last-child{ 
+    position: absolute; 
+    top:400px; 
+    left:135px; 
+    height: 50px; 
+    width: 50px; 
+    border-radius: 50%; 
+    background-color:  #4723AE; 
+}
+@media  screen and (min-width:820px) {
+    body{
+        position: relative;
+
+    }
+    header{
+        width: 25vw;
+        height: 15vw;
+        position: absolute;
+        left: 35vw;
+        border-bottom-right-radius:30%;
+        border-bottom-left-radius: 30%;
+        justify-content: center;
+        align-items: center;
+        background-color: unset;
+    }
+    header>div:first-child{
+        display: none;
+    }
+    
+    header>div:nth-child(3){
+        display: none;
+    }
+    header>div:nth-child(2){
+        background-color: white;
+        height: 150px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30% ;
+        position: absolute;
+        top: 0;
+    }
+    /*kako da uvecam ikonu?*/
+    header img{
+        width: 10vw;
+        height: 10vw;
+    }
+    header .menu{
+        background-color: unset;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        color: white;
+        font-size: xx-large;
+        border:none;
+        position: fixed;
+    }
+   header .menu > div > ul > li{
+       display: inline-block;
+
+   }
+    a{
+        text-decoration: underline;
+        color: white;
+       
+    }
+    h1{
+        font-size: xx-large;
+        top: 400px;
+        left: 565px;
+        position: sticky;
+    }
+    p{
+        font-size: large;
+        top: 35vh;
+        left: 20vw;
+        width: 60%;
+    }
+
+    .icon1{
+        top: 45vh;
+        left:0;
+    }
+    .icon2{
+        top: 45vh;
+        left: 22vw;
+    }
+    .icon3{
+        top: 45vh;
+        left: 44vw;
+    }
+    .icon4{
+        top: 45vh;
+        left: 66vw;
+    }
+    .innerwrapper{
+        top: 60vh;
+        left: 20vh;
+        background-color: unset;
+    }
+    .male{
+        display: none;
+    }
+    .female{
+        display: none;
+    }
+    form{
+        display: none;
+    }
 }
